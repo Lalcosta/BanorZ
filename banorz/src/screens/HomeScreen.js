@@ -17,7 +17,7 @@ export default function HomeScreen() {
   const renderNewsItem = ({item}) => {
     return(
       <View style={styles.newsItem}>
-        <Image style={styles.newsItemImage} source={item.image} />
+        <Image style={styles.newsItemImage} source={item.image} resizeMode='cover' />
         <Text style={styles.newsItemTitle}>{item.title}</Text>
         <Text style={styles.newsItemDescription}>{item.description}</Text>
       </View>
@@ -25,6 +25,8 @@ export default function HomeScreen() {
   }
   return (
     <View style={styles.container}>
+      <Text style={styles.welcome}>Bienvenido Eduardo</Text>
+      <Text style={styles.welcomeDescription}>Tenemos estas noticias que podrían interesarte.</Text>
       <FlatList
         data={newsData}
         renderItem={renderNewsItem}
@@ -39,11 +41,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+    
   },
   newsItem: {
     marginBottom: 20,
   },
   newsItemImage: {
+    width: '100%',
     height: 200,
     borderRadius: 10,
     marginBottom: 10,
@@ -52,9 +56,25 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 5,
+    
   },
   newsItemDescription: {
     fontSize: 16,
+    marginBottom: 20,
+    color: '#666'
+    
   },
+  welcome:{
+    fontSize: 24,
+    fontWeight: 'bold',
+    
+  },
+  welcomeDescription:{
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    color: '#666'
+    
+  }
 });
 

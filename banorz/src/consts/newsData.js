@@ -13,7 +13,7 @@ const newsData = [
       description: 'Para impulsar tu desarrollo ponemos a tu disposición nuevas vacantes, consultalas en el área de Carreras' },
     { id: 4, 
       title: 'Asiste a la próxima campaña de vacunación', 
-      image: require('../assets/new3.jpeg'), 
+      image: require('../assets/new4.png'), 
       description: 'Del 13 al 17 de Marzo asiste a la campaña de vacunación contra la influenza.' },
 
     // add more news articles here
