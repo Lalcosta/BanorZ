@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
+    backgroundColor: '#e6e6e6'
     
   },
   newsItem: {
@@ -61,7 +62,7 @@ const styles = StyleSheet.create({
   newsItemDescription: {
     fontSize: 16,
     marginBottom: 20,
-    color: '#666'
+    color: '#333333'
     
   },
   welcome:{
@@ -73,7 +74,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     marginBottom: 20,
-    color: '#666'
+    color: '#333333'
     
   }
 });

@@ -1,0 +1,38 @@
+const carreersData = [
+    { id: 1, 
+      title: 'CIENTIFICO DE DATOS JR', 
+      image: require('../assets/BANORZ.jpg'),
+      description: 'MEXICO, Ciudad de México, MX' },
+    { id: 2, 
+      title: 'AUXILIAR ADMINISTRATIVO', 
+      image: require('../assets/BANORZ.jpg'),
+      description: 'CDMX, Puebla, MX' },
+    { id: 3, 
+      title: 'AUXILIAR OPERACIONES ADQUIRENTE', 
+      image: require('../assets/BANORZ.jpg'),
+      description: 'MONTERREY, Nuevo León, MX' },
+    { id: 4, 
+      title: 'ESPECIALISTA JR INNOVACION Y TRANSFORMACION', 
+      image: require('../assets/BANORZ.jpg'),
+      description: 'MEXICO, Ciudad de México, MX' },
+    { id: 5, 
+      title: 'AUXILIAR CAPTURA TDC', 
+      image: require('../assets/BANORZ.jpg'),
+      description: 'MONTERREY, Nuevo León, MX' },
+    { id: 6, 
+      title: 'ESPECIALISTA DE ESTRATEGIA BPP', 
+      image: require('../assets/BANORZ.jpg'),
+      description: 'MEXICO, Ciudad de México, MX' },
+    { id: 7, 
+      title: 'GERENTE DE RELACION CON NEGOCIO', 
+      image: require('../assets/BANORZ.jpg'),
+      description: 'MEXICO, Ciudad de México, MX' },
+    { id: 8, 
+      title: 'ANALISTA PROMOCION AYF', 
+      image: require('../assets/BANORZ.jpg'),
+      description: 'CHIHUAHUA, Chihuahua, MX' },
+
+    // add more news articles here
+  ];
+
+  export default carreersData;

@@ -18,15 +18,17 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 20,
     marginBottom: 20,
+    backgroundColor:'#fff'
+  
   },
   image: {
     width: '100%',
-    height: 200,
+    height: 300,
     marginBottom: 10,
     resizeMode: 'cover',
   },
   title: {
-    fontSize: 18,
+    fontSize: 30,
     fontWeight: 'bold',
     marginBottom: 10,
     color: '#333',

@@ -1,8 +1,8 @@
 const newsData = [
     { id: 1, 
-      title: '¡Se acerca tu cumpleaños!', 
+      title: '¡Grupo Financiero Banorte de desea feliz cumpleaños!', 
       image: require('../assets/new1.jpeg'),
-      description: '¡Grupo Financiero Banorte de desea feliz cumpleaños! Disfruta de tu tarde libre a partir de las 2:00pm.' },
+      description: 'Disfruta de tu tarde libre a partir de las 2:00pm.' },
     { id: 2, 
       title: '¡Nuevas promociones para que no te pierdas Oppenheimer!', 
       image: require('../assets/new2.jpeg'), 
