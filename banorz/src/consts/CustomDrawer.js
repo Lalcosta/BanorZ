@@ -4,7 +4,7 @@ import {View, Text, Image, FlatList, StyleSheet, TouchableOpacity} from 'react-n
 
 export default function CustomDrawer(props){
 
-    const[selectedId, setSelectedId]=useState(null);
+    const[selectedId, setSelectedId]=useState("Inicio");
 
     
 
@@ -43,7 +43,7 @@ export default function CustomDrawer(props){
         <View style={{flex:1}}>
             <View style={{flex: 0.3, backgroundColor:'#7f7679', paddingTop:50, paddingHorizontal:20}}>
                 <Image 
-                    source={require('../assets/SCOLARSHIP.jpg')}
+                    source={require('../assets/PROFILEPIC.jpg')}
                     style={{height:100, width:100, borderRadius:50, marginLeft: 20}}/>
                 <Text style={{fontWeight:'bold', fontSize:28, marginTop:20, marginLeft: 20,color:'#fff'}}>Eduardo Acosta</Text>
                 <Text style={{fontSize:16, marginTop:5, marginLeft: 20, color:'#fff'}}>#1375206</Text>
