@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     borderColor:'#7f7679',
     padding:5,
     backgroundColor:'#fff'
-
+    
   },
   image: {
     width: 50,

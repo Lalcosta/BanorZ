@@ -27,7 +27,7 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <Text style={styles.welcome}>Bienvenido Eduardo</Text>
       <Text style={styles.welcomeDescription}>Tenemos estas noticias que podrían interesarte.</Text>
-      <FlatList
+      <FlatList 
         data={newsData}
         renderItem={renderNewsItem}
         keyExtractor={(item) => item.id.toString()}

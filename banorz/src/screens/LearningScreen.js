@@ -19,7 +19,7 @@ const LearningScreen = () => {
     <View style={styles.container}>
       <Text style={styles.welcome}>Banorte contribuye al desarrollo de sus colaboradores</Text>
       <Text style={styles.welcomeDescription}>Conoce los programas de liderazgo para los direfentes puestos.</Text>
-      <ScrollView contentContainerStyle={styles.scrollViewContainer}>
+      <ScrollView  contentContainerStyle={styles.scrollViewContainer}>
         {learningData.map((learning, index) => (
           
             <CourseCard

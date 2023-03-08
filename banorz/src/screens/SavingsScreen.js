@@ -33,6 +33,7 @@ const SavingsScreen = () => {
         style={{borderRadius:20,
         alignItems:'center'}}
       />
+      <Text>  </Text>
       <ScrollView contentContainerStyle={styles.scrollViewContainer}>
         {savingsData.map((saving, index) => (
           

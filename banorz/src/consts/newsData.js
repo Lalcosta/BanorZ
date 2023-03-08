@@ -1,6 +1,6 @@
 const newsData = [
     { id: 1, 
-      title: '¡Grupo Financiero Banorte de desea feliz cumpleaños!', 
+      title: '¡Grupo Financiero Banorte te desea feliz cumpleaños!', 
       image: require('../assets/new1.jpeg'),
       description: 'Disfruta de tu tarde libre a partir de las 2:00pm.' },
     { id: 2, 
@@ -10,9 +10,9 @@ const newsData = [
     { id: 3, 
       title: '¡Nuevas vacantes!', 
       image: require('../assets/new3.jpeg'), 
-      description: 'Para impulsar tu desarrollo ponemos a tu disposición nuevas vacantes, consultalas en el área de Carreras' },
+      description: 'Para impulsar tu desarrollo ponemos a tu disposición nuevas vacantes, consultalas en el área de Carreras.' },
     { id: 4, 
-      title: 'Asiste a la próxima campaña de vacunación', 
+      title: 'Asiste a la próxima campaña de vacunación.', 
       image: require('../assets/new4.png'), 
       description: 'Del 13 al 17 de Marzo asiste a la campaña de vacunación contra la influenza.' },
 

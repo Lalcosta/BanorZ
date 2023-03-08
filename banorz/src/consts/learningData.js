@@ -22,11 +22,11 @@ const learningData = [
     { id: 6, 
       title: 'Continuidad y Actualización, IPADE.', 
       image: require('../assets/IPADE.png'), 
-      description: 'Perfeccionar las habilidades directivas mediante su práctica intensiva, motivando a desarrollar sus cualidades para la toma de decisiones, ejercitando la flexibilidad y amplitud de criterio, así como la construcción de firmeza de carácter que debe acompañar a toda acción directiva. \nDirigido a: Directores Ejecutivos con experiencia que hayan participado en el programa de Alta Dirección Banorte' },
+      description: 'Perfeccionar las habilidades directivas mediante su práctica intensiva, motivando a desarrollar sus cualidades para la toma de decisiones, ejercitando la flexibilidad y amplitud de criterio, así como la construcción de firmeza de carácter que debe acompañar a toda acción directiva. \nDirigido a: Directores Ejecutivos con experiencia que hayan participado en el programa de Alta Dirección Banorte.' },
     { id: 7, 
       title: 'Coaching Ejecutivo, SHERPA COACHING', 
       image: require('../assets/SHERPA.png'), 
-      description: 'Fortalecer las habilidades requeridas para dirigir personas a través de un proceso de coaching individual. \nDirigido a directores ejecutivos' },
+      description: 'Fortalecer las habilidades requeridas para dirigir personas a través de un proceso de coaching individual. \nDirigido a directores ejecutivos.' },
 
     // add more news articles here
   ];

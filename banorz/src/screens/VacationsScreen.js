@@ -18,7 +18,7 @@ const SavingsScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.welcome}>12 días correspondientes a un año de antiguedad</Text>
-      <Text style={styles.welcomeDescription}>Las vacaciones se capturan en la Intranet de RH y se requiere la autorización del Jefe Inmediato.</Text>
+      <Text style={styles.welcomeDescription}>Las vacaciones se capturan en la Intranet de RRHH y se requiere la autorización del Jefe Inmediato.</Text>
       <ScrollView contentContainerStyle={styles.scrollViewContainer}>
         {vacationsData.map((vacation, index) => (
           
