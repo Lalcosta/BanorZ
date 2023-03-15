@@ -27,6 +27,7 @@ const QualityOfLifeScreen = () => {
               title={qolife.title}
               description={qolife.description}
               image={qolife.image}
+              fulldescription={qolife.fulldescription}
             />
           
         ))}

@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native';
 
 
-const CareersScreen = () => {
+const CareersScreen = (props) => {
   const navigation = useNavigation();
   React.useLayoutEffect(() => {
     navigation.setOptions({
@@ -20,13 +20,14 @@ const CareersScreen = () => {
       <Text style={styles.welcome}>Banorte contribuye al desarrollo de sus colaboradores</Text>
       <Text style={styles.welcomeDescription}>Conoce nuestras nuevas vacantes, primero en BANOR Z.</Text>
       <ScrollView contentContainerStyle={styles.scrollViewContainer}>
-        {careersData.map((career, index) => (
+        {careersData.map((career, index,props) => (
           
             <CourseCard
               key={index}
               title={career.title}
               description={career.description}
               image={career.image}
+              fulldescription={career.fulldescription}
             />
           
         ))}

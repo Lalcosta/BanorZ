@@ -1,9 +1,12 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native';
-const CourseCard = ({ title, description, image }) => {
+import { useNavigation, NavigationContainer } from '@react-navigation/native';
+
+const CourseCard = ({ title, description, image, fulldescription}) => {
+  const navigation = useNavigation();
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={() => navigation.navigate('Detalles',{title,image,fulldescription})}>
         <View style={styles.container}>
         <Image source={image} style={styles.image} />
         <View style={styles.textContainer}>

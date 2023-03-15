@@ -26,6 +26,7 @@ const PromoScreen = () => {
               title={promo.title}
               description={promo.description}
               image={promo.image}
+              fulldescription={promo.fulldescription}
             />
           
         ))}

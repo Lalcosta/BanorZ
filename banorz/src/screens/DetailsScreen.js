@@ -1,19 +1,21 @@
 import React from 'react';
-import { ImageBackground,
+import {
+  ImageBackground,
   SafeAreaView,
   StatusBar,
   StyleSheet,
   View,
   Text,
   TouchableOpacity,
-  ScrollView } from 'react-native';
-import Box from '../consts/Box';
-import scolarshipsData from '../consts/scolarshipsData';
-import { useNavigation } from '@react-navigation/native';
-import colors from '../consts/colors';
+  ScrollView
+} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import colors from '../consts/colors';
+import { useNavigation } from '@react-navigation/native';
 
-const ScolarshipsScreen = () => {
+
+
+const DetailsScreen = ({n, route}) => {
   const navigation = useNavigation();
   React.useLayoutEffect(() => { 
     navigation.setOptions({
@@ -21,13 +23,13 @@ const ScolarshipsScreen = () => {
       headerTintColor: '#fff',
     });
   }, [navigation]);
-  const info = scolarshipsData;
+  const info = route.params;
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: '#e6e6e6'}}>
       <StatusBar translucent backgroundColor="rgba(0,0,0,0)" />
         <ScrollView>
         <View>
-        <ImageBackground style={{flex: 0.7}} source={require('../assets/SCOLARSHIP.jpg')} resizeMode='cover'  backgroundColor='#f9133a'>
+        <ImageBackground style={{flex: 0.7}} source={info.image} resizeMode='cover'  backgroundColor='#f9133a'>
           <View style={style.header}>
             <Icon
               name="arrow-back-ios"
@@ -40,24 +42,9 @@ const ScolarshipsScreen = () => {
         </View>
         <View style={style.detailsContainer}>
           <Text style={{marginTop: 20, fontWeight: 'bold', fontSize: 20}}>
-          {'Concurso de Becas'}
+            {info.title}
           </Text>
-          <Text style={{marginTop: 20, lineHeight: 22}}>{
-                      'Objetivo: \n'
-                    + 'Impulsar el desarrollo profesional de nuestros Gerentes, Subdirectores y Directores, otorgando becas para realizar estudios de maestría; contribuyendo así con el cumplimiento de las metas del Grupo Financiero Banorte. \n \n' 
-                    + 'Dirigido a Gerentes, Subdirectores y Directores \n \n'
-                    + 'Requisitos Generales: \n'
-                    + ' - Formato de solicitud de beca. \n'
-                    + ' - Antigüedad mínima de 2 años seis meses cumplidos en la Institución. \n'
-                    + ' - Últimas dos calificaciones de desempeño óptimo o superior. \n'
-                    + ' - Información actualizada en Mi Perfil de SSFF. \n'
-                    + ' - Evaluaciones Integrales completas. \n'
-                    + ' - Ensayo 1: Valor agregado. \n'
-                    + ' - Ensayo 2: Atributos de liderazgo y personalidad. \n \n'
-                    + 'Alcance: Apoyo mínimo de 15% y hasta un 70% como máx, maestrías por iniciar o en curso (no retroactivo). \n \n'
-                    + 'Enlaces y vínculos: \n'
-                    + 'Sitio de becas: Concurso Becas 2021 (sharepoint.com)\n'
-                    + 'Política de becas: https://normatividad.edificios.gfbanorte/Login/Index \n'}</Text>
+          <Text style={{marginTop: 20, lineHeight: 22}}>{info.fulldescription}</Text>
         </View>
         <View style={style.footer}>
           <TouchableOpacity>
@@ -132,4 +119,4 @@ const style = StyleSheet.create({
   },
 });
 
-export default ScolarshipsScreen;
+export default DetailsScreen;

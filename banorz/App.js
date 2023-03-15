@@ -10,6 +10,7 @@ import SavingsScreen from './src/screens/SavingsScreen';
 import ScolarshipsScreen from './src/screens/ScolarshipsScreen';
 import VacationsScreen from './src/screens/VacationsScreen';
 import CustomDrawer from './src/consts/CustomDrawer';
+import DetailsScreen from './src/screens/DetailsScreen';
 const Drawer = createDrawerNavigator();
 
 
@@ -25,6 +26,7 @@ export default function App() {
         <Drawer.Screen name="Plan de ahorros" backgroundColor='#fff' component={SavingsScreen} />
         <Drawer.Screen name="Promociones y descuentos" backgroundColor='#fff' component={PromoScreen} />
         <Drawer.Screen name="Vacaciones" backgroundColor='#fff' component={VacationsScreen} />
+        <Drawer.Screen name="Detalles" backgroundColor='#fff' component={DetailsScreen}/>
       </Drawer.Navigator>
     </NavigationContainer>
   );

@@ -24,6 +24,7 @@ const SavingsScreen = () => {
     <View style={styles.container}>
       <Text style={styles.welcome}>Bienvenido a tu plan de ahorro</Text>
       <Text style={styles.welcomeDescription}>Recuerda que al final de tu plan Grupo Financiero Banorte te duplica tus ahorros.</Text>
+      <ScrollView contentContainerStyle={styles.scrollViewContainer}>
       <LineChart
         data={chartData}
         width={screenWidth-40}
@@ -34,7 +35,7 @@ const SavingsScreen = () => {
         alignItems:'center'}}
       />
       <Text>  </Text>
-      <ScrollView contentContainerStyle={styles.scrollViewContainer}>
+      
         {savingsData.map((saving, index) => (
           
             <SavingsBox

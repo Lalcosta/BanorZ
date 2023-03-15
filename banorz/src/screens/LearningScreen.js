@@ -27,6 +27,7 @@ const LearningScreen = () => {
               title={learning.title}
               description={learning.description}
               image={learning.image}
+              fulldescription={learning.fulldescription}
             />
           
         ))}
